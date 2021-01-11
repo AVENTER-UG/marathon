@@ -9,17 +9,13 @@ title: A container orchestration platform for Mesos and DC/OS
   </p>
   <p>
 
-    <a href="https://downloads.mesosphere.io/marathon/builds/1.8.222-86475ddac/marathon-1.8.222-86475ddac.tgz"
+    <a href="https://rpm.aventer.biz/CentOS/7/x86_64/">
         class="btn btn-lg btn-primary">
-      Download Marathon v1.8.222
+      Download Marathon v1.10.17
     </a>
   </p>
   <a class="btn btn-link"
-      href="https://downloads.mesosphere.io/marathon/builds/1.8.222-86475ddac/marathon-1.8.222-86475ddac.tgz.sha1">
-    v1.8.222 SHA Checksum
-  </a> &middot;
-  <a class="btn btn-link"
-      href="https://github.com/mesosphere/marathon/releases/tag/v1.8.222">
+      href="https://github.com/AVENTER-UG/marathon/releases/tag/v1.8.222">
     v1.8.222 Release Notes
   </a>
 </div>
@@ -30,17 +26,17 @@ Marathon is a production-grade container orchestration platform for Mesosphere's
 
 ## Features
 
-- [High Availability](https://mesosphere.github.io/marathon/docs/high-availability.html). Marathon runs as an active/passive cluster with leader election for 100% uptime.
-- Multiple container runtimes. Marathon has first-class support for both [Mesos containers](https://mesosphere.github.io/marathon/docs/application-basics.html) (using cgroups) and [Docker](https://mesosphere.github.io/marathon/docs/native-docker.html).
-- [Stateful apps](https://mesosphere.github.io/marathon/docs/persistent-volumes.html). Marathon can bind persistent storage volumes to your application. You can run databases like MySQL and Postgres, and have storage accounted for by Mesos.
-- [Beautiful and powerful UI](https://mesosphere.github.io/marathon/docs/marathon-ui.html).
-- [Constraints](https://mesosphere.github.io/marathon/docs/constraints.html). These allow to e.g. place only one instance of an application per rack, node, etc.
-- [Service Discovery & Load Balancing](https://mesosphere.github.io/marathon/docs/service-discovery-load-balancing.html). Several methods available.
-- [Health Checks](https://mesosphere.github.io/marathon/docs/health-checks.html). Evaluate your application's health using HTTP or TCP checks.
-- [Event Subscription](https://mesosphere.github.io/marathon/docs/event-bus.html#subscription-to-events-via-the-event-stream). Supply an HTTP endpoint to receive notifications - for example to integrate with an external load balancer.
-- [Metrics](https://mesosphere.github.io/marathon/docs/metrics.html). Query them at `/metrics` in JSON format, push them to systems like Graphite, StatsD and DataDog, or scrape them using Prometheus.
-- [Deprecated Metrics](https://mesosphere.github.io/marathon/docs/deprecated-metrics.html). Query them at `/metrics` in JSON format, or push them to systems like Graphite, StatsD and DataDog.
-- [Complete REST API](https://mesosphere.github.io/marathon/api-console/index.html) for easy integration and scriptability.
+- [High Availability](https://aventer-ug.github.io/marathon/docs/high-availability.html). Marathon runs as an active/passive cluster with leader election for 100% uptime.
+- Multiple container runtimes. Marathon has first-class support for both [Mesos containers](https://aventer-ug.github.io/marathon/docs/application-basics.html) (using cgroups) and [Docker](https://aventer-ug.github.io/marathon/docs/native-docker.html).
+- [Stateful apps](https://aventer-ug.github.io/marathon/docs/persistent-volumes.html). Marathon can bind persistent storage volumes to your application. You can run databases like MySQL and Postgres, and have storage accounted for by Mesos.
+- [Beautiful and powerful UI](https://aventer-ug.github.io/marathon/docs/marathon-ui.html).
+- [Constraints](https://aventer-ug.github.io/marathon/docs/constraints.html). These allow to e.g. place only one instance of an application per rack, node, etc.
+- [Service Discovery & Load Balancing](https://aventer-ug.github.io/marathon/docs/service-discovery-load-balancing.html). Several methods available.
+- [Health Checks](https://aventer-ug.github.io/marathon/docs/health-checks.html). Evaluate your application's health using HTTP or TCP checks.
+- [Event Subscription](https://aventer-ug.github.io/marathon/docs/event-bus.html#subscription-to-events-via-the-event-stream). Supply an HTTP endpoint to receive notifications - for example to integrate with an external load balancer.
+- [Metrics](https://aventer-ug.github.io/marathon/docs/metrics.html). Query them at `/metrics` in JSON format, push them to systems like Graphite, StatsD and DataDog, or scrape them using Prometheus.
+- [Deprecated Metrics](https://aventer-ug.github.io/marathon/docs/deprecated-metrics.html). Query them at `/metrics` in JSON format, or push them to systems like Graphite, StatsD and DataDog.
+- [Complete REST API](https://aventer-ug.github.io/marathon/api-console/index.html) for easy integration and scriptability.
 
 ## DC/OS features
 

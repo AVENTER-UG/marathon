@@ -27,4 +27,4 @@ kramdown:
 safe: true
 source: .
 exclude: [vendor/bundle]
-repository: mesosphere/marathon
+repository: AVENTER-UG/marathon
