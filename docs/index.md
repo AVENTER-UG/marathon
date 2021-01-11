@@ -15,14 +15,14 @@ title: A container orchestration platform for Mesos and DC/OS
     </a>
   </p>
   <a class="btn btn-link"
-      href="https://github.com/AVENTER-UG/marathon/releases/tag/v1.8.222">
-    v1.8.222 Release Notes
+      href="https://github.com/AVENTER-UG/marathon/releases/tag/v1.10.17">
+    Release Notes
   </a>
 </div>
 
 ## Overview
 
-Marathon is a production-grade container orchestration platform for Mesosphere's [Datacenter Operating System (DC/OS)](https://dcos.io) and [Apache Mesos](https://mesos.apache.org/).
+Marathon is a production-grade container orchestration platform for [Apache Mesos](https://mesos.apache.org/).
 
 ## Features
 
