@@ -9,7 +9,7 @@ title: A container orchestration platform for Mesos and DC/OS
   </p>
   <p>
 
-    <a href="https://rpm.aventer.biz/CentOS/7/x86_64/">
+    <a href="https://rpm.aventer.biz/CentOS/7/x86_64/"
         class="btn btn-lg btn-primary">
       Download Marathon v1.10.17
     </a>
