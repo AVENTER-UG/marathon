@@ -1,9 +1,9 @@
-# [Marathon](https://mesosphere.github.io/marathon/) [![Build Status](https://jenkins.mesosphere.com/service/jenkins/buildStatus/icon?job=marathon-pipelines/master)](https://jenkins.mesosphere.com/service/jenkins/buildStatus/icon?job=marathon-pipelines/master) [![Issues](https://img.shields.io/badge/Issues-JIRA-ff69b4.svg?style=flat)](https://jira.mesosphere.com/projects/MARATHON/issues/)
+# Marathon
 
-Marathon is a production-proven [Apache Mesos][Mesos] framework for container orchestration. [DC/OS](https://dcos.io/get-started/#marathon) is the easiest way to start using Marathon. Issues are tracked in [JIRA](https://jira.mesosphere.com/projects/MARATHON/issues/).
+Marathon is a production-proven [Apache Mesos][Mesos] framework for container orchestration. 
 
 Marathon provides a
-[REST API](https://mesosphere.github.io/marathon/docs/rest-api.html) for
+[REST API](https://aventer-ug.github.io/marathon/docs/rest-api.html) for
 starting, stopping, and scaling applications. Marathon is written in Scala and
 can run in highly-available mode by running multiple copies. The
 state of running tasks gets stored in the Mesos state abstraction.
@@ -18,28 +18,21 @@ can even start other Marathon instances via Marathon.
 * *HA* - run any number of Marathon schedulers, but only one gets elected as
     leader; if you access a non-leader, your request gets proxied to the
     current leader
-* *[Constraints](https://mesosphere.github.io/marathon/docs/constraints.html)* - e.g., only one instance of an application per rack, node, etc.
-* *[Service Discovery &amp; Load Balancing](https://mesosphere.github.io/marathon/docs/service-discovery-load-balancing.html)* via HAProxy or the events API (see below).
-* *[Health Checks](https://mesosphere.github.io/marathon/docs/health-checks.html)*: check your application's health via HTTP or TCP checks.
-* *[Event Subscription](https://mesosphere.github.io/marathon/docs/rest-api.html#event-subscriptions)* lets you supply an HTTP endpoint to receive notifications, for example to integrate with an external load balancer.
-* *[Marathon UI](https://mesosphere.github.io/marathon/docs/marathon-ui.html)*
-* *[JSON/REST API](https://mesosphere.github.io/marathon/docs/rest-api.html)* for easy integration and scriptability
-* *[*Basic Auth* and *SSL*](https://mesosphere.github.io/marathon/docs/ssl-basic-access-authentication.html)*
-* *[Metrics](https://mesosphere.github.io/marathon/docs/metrics.html)*:
+* *[Constraints](https://aventer-ug.github.io/marathon/docs/constraints.html)* - e.g., only one instance of an application per rack, node, etc.
+* *[Service Discovery &amp; Load Balancing](https://aventer-ug.github.io/marathon/docs/service-discovery-load-balancing.html)* via HAProxy or the events API (see below).
+* *[Health Checks](https://aventer-ug.github.io/marathon/docs/health-checks.html)*: check your application's health via HTTP or TCP checks.
+* *[Event Subscription](https://aventer-ug.github.io/marathon/docs/rest-api.html#event-subscriptions)* lets you supply an HTTP endpoint to receive notifications, for example to integrate with an external load balancer.
+* *[Marathon UI](https://aventer-ug.github.io/marathon/docs/marathon-ui.html)*
+* *[JSON/REST API](https://aventer-ug.github.io/marathon/docs/rest-api.html)* for easy integration and scriptability
+* *[*Basic Auth* and *SSL*](https://aventer-ug.github.io/marathon/docs/ssl-basic-access-authentication.html)*
+* *[Metrics](https://aventer-ug.github.io/marathon/docs/metrics.html)*:
   query them at `/metrics` in JSON format, push them to systems like Graphite, StatsD and DataDog, or scrape them using Prometheus.
 
 ## Documentation
 
-Marathon documentation is available on the [Marathon GitHub pages site](http://mesosphere.github.io/marathon/).
+Marathon documentation is available on the [Marathon GitHub pages site](http://aventer-ug.github.io/marathon/).
 
 Documentation for installing and configuring the full Mesosphere stack including Mesos and Marathon is available on the [Mesosphere website](http://docs.mesosphere.com).
-
-## Issue Tracking
-
-Marathon uses [JIRA](https://jira.mesosphere.com/projects/MARATHON) to track issues. You can [browse](https://jira.mesosphere.com/projects/MARATHON/issues/) existing issues or [file a new issue](https://jira.mesosphere.com/secure/CreateIssue!default.jspa?pid=10401) with your GitHub account.
-
-Note for users of GitHub issues: All existing issues have been migrated and closed, and a reference to the related [JIRA](https://jira.mesosphere.com/projects/MARATHON) has been added as a comment.
-We leave the GitHub issues available for reference. Going forward please use [JIRA](https://jira.mesosphere.com/projects/MARATHON) always.
 
 ### Contributing
 
@@ -50,7 +43,7 @@ We heartily welcome external contributions to Marathon's documentation. Document
 ### Dependencies
 Marathon has the following compile-time dependencies:
 * sbt - A build tool for scala. You can find the instructions for installing sbt for Mac OS X and Linux over [here](http://www.scala-sbt.org/0.13/tutorial/Setup.html).
-* JDK 1.8+
+* JDK 1.11+
 
 For run-time, Marathon has the following dependencies:
 * libmesos - JNI bindings for talking to Apache Mesos master. Look at the *Install Mesos* section for instructions to get libmesos.
@@ -58,14 +51,11 @@ For run-time, Marathon has the following dependencies:
 
 ### Installation
 
-#### Getting started with [DC/OS](https://dcos.io/get-started/#marathon)
-The by far easiest way to get Marathon running is to use [DC/OS](https://dcos.io/get-started/#marathon). Marathon is pre-bundled into [DC/OS](https://dcos.io/get-started/#marathon).
-
 #### Install Mesos
 Marathon requires libmesos, a shared object library, that contains JNI bindings for Marathon to talk to the Mesos master. *libmesos* comes as part of the Apache Mesos installation. There are three options for installing Apache Mesos.
 
 ##### Installing Mesos from prepackaged releases
-Instructions on how to install prepackaged releases of Mesos are available [in the Marathon docs](https://mesosphere.github.io/marathon/docs/).
+Instructions on how to install prepackaged releases of Mesos are available [in the Marathon docs](https://aventer-ug.github.io/marathon/docs/).
 
 ##### Building Mesos from source
 **NOTE:** *Choose this option only if building Marathon from source, else there might be version incompatibility between pre-packaged releases of Marathon and Mesos built from source.*
@@ -120,7 +110,7 @@ See `./mvm.sh --help` information on how to  permanently configure your shell fo
 
 #### Install Marathon
 
-Instructions on how to install prepackaged releases are available [in the Marathon docs](https://mesosphere.github.io/marathon/docs/). Alternatively, you can build Marathon from source.
+Instructions on how to install prepackaged releases are available [in the Marathon docs](https://aventer-ug.github.io/marathon/docs/). Alternatively, you can build Marathon from source.
 
 ##### Building from Source
 
@@ -165,7 +155,7 @@ command launches Marathon on Mesos in *local mode*. Point your web browser to
         sbt 'run --master localhost:5050 --zk zk://localhost:2181/marathon'
 
 For more information on how to run Marathon in production and configuration
-options, see [the Marathon docs](https://mesosphere.github.io/marathon/docs/).
+options, see [the Marathon docs](https://aventer-ug.github.io/marathon/docs/).
 
 ## Developing Marathon
 
@@ -273,18 +263,10 @@ Not in the list? Open a pull request and add yourself!
 
 ## Help
 
-Have you found an issue? Feel free to report it using our [JIRA Issues](https://jira.mesosphere.com/projects/MARATHON/summary) page.
+Have you found an issue? Feel free to report it.
 In order to speed up response times, we ask you to provide as much
 information on how to reproduce the problem as possible. If the issue is related
  in any way to the web UI, we kindly ask you to use the `gui` label.
-
-If you have questions, please post on the [Marathon Framework](https://groups.google.com/forum/?hl=en#!forum/marathon-framework) email list. 
-
-You can find Marathon support in the `#marathon` channel, and Mesos support in the `#mesos` channel, on [freenode][freenode] (IRC). Alternatively, check out the same channels on the [Mesos Slack](https://mesos.slack.com/) ([request an invitation here](https://mesos-slackin.herokuapp.com/)). 
-
-The team at [Mesosphere][Mesosphere] is also happy to answer any questions.
-
-If you'd like to take part in design research and test new features in Marathon before they're released, please add your name to our [UX Research](http://uxresearch.mesosphere.com) list.
 
 ## Authors
 
