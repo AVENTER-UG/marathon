@@ -124,7 +124,7 @@ object Dependency {
     val Logstash = "4.9"
     val MarathonApiConsole = "3.0.8-accept"
     val MarathonUI = "1.3.2"
-    val Mesos = "1.11.0-SNAPSHOT"
+    val Mesos = "1.11.0"
     val Mustache = "0.9.0"
     val PlayJson = "2.8.1"
     val Raven = "8.0.3"
@@ -138,7 +138,7 @@ object Dependency {
     val WixAccord = "0.7.6"
 
     // Version of Mesos to use when building docker image or testing packages
-    val MesosDebian = "1.11.0-0.1.1416.pre.20201006gitc28fd3a93"
+    val MesosDebian = "1.11.0"
 
     // test deps versions
     val JMH = "1.19"

@@ -6,6 +6,7 @@ Requires=network.target
 Type=simple
 WorkingDirectory=/usr/share/marathon
 EnvironmentFile=/etc/default/marathon
+EnvironmentFile=/etc/sysconfig/marathon
 ExecStart=/usr/share/marathon/bin/marathon
 ExecReload=/bin/kill -HUP $MAINPID
 Restart=always

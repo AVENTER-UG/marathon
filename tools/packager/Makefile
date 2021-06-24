@@ -20,12 +20,12 @@ BUILD_TARGET_ROOT := target/$(PKG_VER)
 FPM_OPTS := -s dir -n marathon -v $(PKG_VER) \
 	-p $(BUILD_TARGET_ROOT)/ \
 	--architecture all \
-	--url "https://github.com/mesosphere/marathon" \
+	--url "https://github.com/AVENTER-UG/marathon" \
 	--license Apache-2.0 \
 	--description "Cluster-wide init and control system for services running on\
 	Apache Mesos" \
-	--maintainer "Mesosphere Package Builder <support@mesosphere.io>" \
-	--vendor "Mesosphere, Inc."
+	--maintainer "AVENTER UG <support@aventer.biz>" \
+	--vendor "AVENTER UG (haftungsbeschraenkt)"
 FPM_OPTS_DEB := -t deb \
 	-d 'java8-runtime-headless' \
 	-d 'lsb-release' \
