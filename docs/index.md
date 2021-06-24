@@ -1,21 +1,21 @@
 ---
-title: A container orchestration platform for Mesos and DC/OS
+title: A container orchestration platform for Mesos 
 ---
 
 <div class="jumbotron text-center">
   <h1>Marathon</h1>
   <p class="lead">
-    A container orchestration platform for Mesos and DC/OS
+    A container orchestration platform for Mesos 
   </p>
   <p>
 
     <a href="https://rpm.aventer.biz/CentOS/7/x86_64/"
         class="btn btn-lg btn-primary">
-      Download Marathon v1.10.17
+      Download Marathon v1.11.30
     </a>
   </p>
   <a class="btn btn-link"
-      href="https://github.com/AVENTER-UG/marathon/releases/tag/v1.10.17">
+      href="https://github.com/AVENTER-UG/marathon/releases/tag/v1.11.30">
     Release Notes
   </a>
 </div>
