@@ -1,3 +1,14 @@
+## dev
+
+## v1.11.30
+
+### Fixed Issues
+
+- [MARATHON-8771](https://jira.d2iq.com/browse/MARATHON-8771) - Don't let to-be-restarted instances constrain placement
+
+
+***** Start with the fork **
+
 ## Changes from to 1.10.17 to 1.10.xxx
 
 ### Fixed issues
